@@ -1,17 +1,7 @@
 {
-  "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "dist",
-    "target": "ESNext",
-    "jsx": "react",
-    "module": "NodeNext",
-    "esModuleInterop": true,
-    "moduleResolution": "NodeNext",
-    "allowJs": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "types": ["vite/client"]
-  },
-  "include": ["src/**/*"], 
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
