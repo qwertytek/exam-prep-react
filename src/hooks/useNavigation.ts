@@ -1,10 +1,17 @@
-// creating router implementation with 
+// creating router implementation with hooks
 import { useState, useEffect } from "react";
 
 const useNavigation = () => {
     const [pathname, setPathname] = useState('/');
 
+    // deal with back button
     useEffect(() => {
+        const handlePopState = () => {
+            setPathname(window.location.pathname);
+        };
+
+        window.addEventListener('popstate', handlePopState);
+
         if(pathname !== window.location.pathname) {
             setPathname(window.location.pathname);
         }
