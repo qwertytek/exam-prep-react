@@ -18,37 +18,27 @@ and paste code. You should write your own code.
 ## Requirements/Installation
 
 Since the no external libraries rules is in place (other than react), the project should be as minimal as possible. 
-Which means no NPM and consequently no bundler like (vite or webpack).
 
-So react is installed over CDN
+Additionally I'll install vite and types (when necessary)
 
-```language=html
-<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-```
+## Commands
 
-In order to perform tasks like running scripts I'll use bash. So in order to enable scripts:
-
+Dev
 ```language=bash
-chmod +x serve.sh
+npm run dev
 ```
 
-Dev server is normally handled by vite or webpack configuration. 
-Without a bundle the option is to use somthing most developers have installed in their machine is python.
-
-To check if you have python available run:
+build
 ```language=bash
-python --version
+npm run preview
 ```
 
-Unfortunately this means no Hot module reloading. 
-So server needs to be restared everytime there is a change.
-
-## Run the application
-
+Preview
 ```language=bash
-./serve.sh
+npm run preview
 ```
+
+
 
 
 
