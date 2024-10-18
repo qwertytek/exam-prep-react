@@ -1,7 +1,6 @@
 // creating router implementation with 
 import { useState, useEffect } from "react";
 
-
 const useNavigation = () => {
     const [pathname, setPathname] = useState('/');
 

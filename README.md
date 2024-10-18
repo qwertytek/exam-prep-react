@@ -15,6 +15,23 @@ and paste code. You should write your own code.
 2. DOM Manipulation in TypeScript
 3. Please also review React/TS fundamentals before starting
 
+### Hooks
+
+- router hook for minimal navigation features
+- localstorage and localseasion access and write
+- useFetch to abstract the fetching logic 
+
+Main concepts for understanding hooks:
+- return and object of state values and/or state setters
+- use useState, useEffect to create more complex hooks
+- encapsolated logic for separation
+
+### Dom Manipulation
+
+
+### React/Ts fundamentals
+
+
 ## Requirements/Installation
 
 Since the no external libraries rules is in place (other than react), the project should be as minimal as possible. 
