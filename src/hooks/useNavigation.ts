@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const useNavigation = () => {
     const [pathname, setPathname] = useState('/');
 
-    // deal with back button
+    // deals with back button
     useEffect(() => {
         const handlePopState = () => {
             setPathname(window.location.pathname);
